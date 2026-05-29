@@ -1,0 +1,18 @@
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - LOGS_CAPTURED - Capturing logs for process (pid: 55735).
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - STEP_START - Started execution of step "dim_dates".
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - dim_dates - Loading file from: /Users/ariel/CE-IA/BigDataAplicado/Proyecto/proy-tienda/etl/.dagster_home/storage/transactions using PickledObjectFilesystemIOManager...
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - LOADED_INPUT - Loaded input "transactions" using input manager "io_manager", from output "result" of step "transactions"
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - STEP_INPUT - Got input "transactions" of type "DataFrame". (Type check passed).
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mINFO[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - dim_dates - Generando dimensión de fechas con 1095 filas...
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - dim_dates - Primeras filas de dim_dates:
+   id       date  day  month  year  season
+0   1 2021-01-01    1      1  2021  Winter
+1   2 2021-01-02    2      1  2021  Winter
+2   3 2021-01-03    3      1  2021  Winter
+3   4 2021-01-04    4      1  2021  Winter
+4   5 2021-01-05    5      1  2021  Winter
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - dim_dates - Writing file at: /Users/ariel/CE-IA/BigDataAplicado/Proyecto/proy-tienda/etl/.dagster_home/storage/dim_dates using PickledObjectFilesystemIOManager...
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - ASSET_MATERIALIZATION - Materialized value dim_dates.
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-29 22:46:59 +0200[0m - dagster - [34mDEBUG[0m - full_etl - 21970135-7433-4a16-b2d8-fde410d8f2c4 - 55735 - dim_dates - STEP_SUCCESS - Finished execution of step "dim_dates" in 93ms.
